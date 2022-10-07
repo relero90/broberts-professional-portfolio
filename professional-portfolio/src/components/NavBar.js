@@ -10,8 +10,16 @@ const styles = {
   },
   navButton: {
     width: "20%",
-    background: "#212529",
+    background: colors.dark3,
     color: colors.light1,
+    borderRadius: "40%",
+    border: `solid 2px ${colors.accent}`,
+    fontSize: "3vw",
+  },
+  navBtnOnHover: {
+    width: "20%",
+    background: colors.dark3,
+    color: colors.accent,
     borderRadius: "40%",
     border: `solid 2px ${colors.accent}`,
     fontSize: "3vw",
@@ -27,16 +35,31 @@ function NavBar() {
   // Switch to "About" view
   // Switch to "Work" view
 
+  // const [hoverState, setHoverState] = useState(false);
+  // const onMouseEnter = () => {
+  //   setHoverState(true);
+  // };
+  // const onMouseLeave = () => {
+  //   setHoverState(false);
+  // };
+
   return (
     <div style={styles.navBar}>
-      <button style={styles.navButton} id="aboutBtn">
+      <button style={styles.navButton} onHover={() => styles.navBtnOnHover}>
         About
       </button>
       <button style={styles.navButton} id="workBtn">
         Work
       </button>
       <button style={styles.navButton} id="resumeBtn">
-        Resume
+        <a
+          style={styles.navLink}
+          title="Download Resume PDF"
+          href="/Resume-Stand-In.pdf"
+          download
+        >
+          Resume
+        </a>
       </button>
 
       <button style={styles.navButton} id="contactBtn">

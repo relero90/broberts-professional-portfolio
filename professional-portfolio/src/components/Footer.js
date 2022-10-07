@@ -27,22 +27,27 @@ function Footer() {
     <div style={styles.footer} id="footer">
       <div style={styles.iconDiv}>
         {/* GitHub icon link */}
-        <a target="_blank" href="https://github.com/relero90">
+        <a
+          title="GitHub Profile"
+          target="_blank"
+          href="https://github.com/relero90"
+        >
           <i style={styles.icon} className="fa-brands fa-github"></i>
         </a>
         {/* LinkedIn icon link */}
         <a
+          title="LinkedIn Profile"
           target="_blank"
           href="https://www.linkedin.com/in/becca-roberts-a87729240/"
         >
           <i style={styles.icon} className="fa-brands fa-linkedin"></i>
         </a>
         {/* Email icon link */}
-        <a target="_blank" href="mailto:relero90@gmail.com">
+        <a title="Email" target="_blank" href="mailto:relero90@gmail.com">
           <i style={styles.icon} className="fa-regular fa-envelope"></i>
         </a>
         {/* Resume icon link - file in public needs to be replaced with updated resume */}
-        <a href="/Resume-Stand-In.pdf" download>
+        <a title="Download Resume PDF" href="/Resume-Stand-In.pdf" download>
           <i style={styles.icon} className="fa-solid fa-download"></i>
         </a>
       </div>

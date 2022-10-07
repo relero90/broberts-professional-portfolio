@@ -9,7 +9,7 @@ const styles = {
     textAlign: "center",
     color: colors.light1,
     fontFamily: "Petit Formal Script",
-    fontSize: "5vw",
+    fontSize: "6vw",
   },
 };
 
