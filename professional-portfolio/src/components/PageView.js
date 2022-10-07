@@ -3,6 +3,7 @@ import Header from "./Header.js";
 import NavBar from "./NavBar.js";
 import Project from "./Project.js";
 import Footer from "./Footer.js";
+import colors from "../utils/colorScheme";
 
 function PageView() {
   //   render entire pageview with all components - should this just be happening in App.js?

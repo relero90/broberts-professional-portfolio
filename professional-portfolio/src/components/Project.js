@@ -9,6 +9,7 @@ const styles = {
     justifyContent: "center",
     maxHeight: "60vh",
     width: "100vw",
+    marginTop: "12vh",
     border: `solid 2px ${colors.light1}`,
     borderRadius: "3%",
   },

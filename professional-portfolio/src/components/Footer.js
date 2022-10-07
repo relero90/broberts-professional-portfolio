@@ -17,7 +17,8 @@ const styles = {
   },
   icon: {
     color: colors.light1,
-    fontSize: "8vw",
+    fontSize: "6.5vw",
+    marginBottom: "5vh",
   },
 };
 
