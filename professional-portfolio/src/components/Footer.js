@@ -7,13 +7,16 @@ const styles = {
     left: "0",
     bottom: "0",
     width: "100%",
+    height: "8vh",
   },
   iconDiv: {
     display: "flex",
     justifyContent: "space-around",
+    height: "8vh",
   },
   icon: {
     color: "#F8F9FA",
+    fontSize: "8vw",
   },
 };
 
@@ -21,22 +24,25 @@ function Footer() {
   return (
     <div style={styles.footer} id="footer">
       <div style={styles.iconDiv}>
-        <a
-          target="_blank"
-          href="https://github.com/relero90"
-          style={styles.icon}
-        >
-          <i className="fa-brands fa-github"></i>
+        {/* GitHub icon link */}
+        <a target="_blank" href="https://github.com/relero90">
+          <i style={styles.icon} className="fa-brands fa-github"></i>
         </a>
+        {/* LinkedIn icon link */}
         <a
           target="_blank"
           href="https://www.linkedin.com/in/becca-roberts-a87729240/"
-          style={styles.icon}
         >
-          <i className="fa-brands fa-linkedin"></i>
+          <i style={styles.icon} className="fa-brands fa-linkedin"></i>
         </a>
-        <i className="fa-regular fa-envelope"></i>
-        <i className="fa-solid fa-download"></i>
+        {/* Email icon link */}
+        <a target="_blank" href="mailto:relero90@gmail.com">
+          <i style={styles.icon} className="fa-regular fa-envelope"></i>
+        </a>
+        {/* Resume icon link */}
+        <a href="/Resume-Stand-In.pdf" download>
+          <i style={styles.icon} className="fa-solid fa-download"></i>
+        </a>
       </div>
     </div>
   );

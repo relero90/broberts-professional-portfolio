@@ -5,7 +5,7 @@ const styles = {
   navBar: {
     width: "100%",
     display: "flex",
-    justifyContent: "space-evenly",
+    justifyContent: "space-around",
   },
   navButton: {
     width: "20%",
