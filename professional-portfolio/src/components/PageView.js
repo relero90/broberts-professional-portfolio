@@ -26,9 +26,9 @@ function PageView() {
           <Header />
           <NavBar />
         </header>
-        <body style={styles.body}>
+        <section style={styles.body}>
           <Project />
-        </body>
+        </section>
         <Footer />
       </main>
     </div>

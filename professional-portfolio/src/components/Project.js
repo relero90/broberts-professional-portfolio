@@ -39,22 +39,52 @@ const styles = {
 };
 
 function Project() {
-  // For each project that is featured in your portfolio, include the following:
-  // An image of the deployed application (either a short animated GIF or screenshot)
-  // The title of the project
-  // A link to the deployed application
-  // A link to the corresponding GitHub repository
-  const [project, setProject] = useState({
-    imagePath: "/public/images/kiss-the-cook.png",
-    title: "Kiss the Cook",
-    appLink: "https://kiss-the-cook.herokuapp.com/",
-    gitHub: "https://github.com/madrodgerflynn/Kiss_The_Cook",
-  });
+  const projects = [
+    {
+      index: 0,
+      imagePath: "./images/kiss-the-cook.png",
+      title: "Kiss the Cook",
+      appLink: "https://kiss-the-cook.herokuapp.com/",
+      gitHub: "https://github.com/madrodgerflynn/Kiss_The_Cook",
+    },
+    {
+      index: 1,
+      imagePath: "./images/brewfinder.png",
+      title: "Brewfinder",
+      appLink: "https://github.com/relero90/brewfinder",
+      gitHub: "https://relero90.github.io/brewfinder/",
+    },
+  ];
+  const [project, setProject] = useState(projects[0]);
+
+  const displayNextProject = () => {
+    // if we are not at the end of the array
+    if (project.index < projects.length - 1) {
+      // move to the next array member
+      setProject(projects[project.index + 1]);
+      return;
+    } else {
+      // move to the first array member
+      setProject(projects[0]);
+      return;
+    }
+  };
+
+  const displayPreviousProject = () => {
+    // if we are not at the beginning of the array
+    if (project.index > 0) {
+      // move to the previous array member
+      setProject(projects[project.index - 1]);
+    } else {
+      // move to the final array member
+      setProject(projects[projects.length - 1]);
+    }
+  };
 
   return (
     <div style={styles.gallery}>
-      <button style={styles.galleryBtn}>
-        <i class="fa-solid fa-arrow-left"></i>
+      <button style={styles.galleryBtn} onClick={displayPreviousProject}>
+        <i className="fa-solid fa-arrow-left"></i>
       </button>
       <div style={styles.projectCard}>
         <img
@@ -71,8 +101,8 @@ function Project() {
           </a>
         </div>
       </div>
-      <button style={styles.galleryBtn}>
-        <i class="fa-solid fa-arrow-right"></i>
+      <button style={styles.galleryBtn} onClick={displayNextProject}>
+        <i className="fa-solid fa-arrow-right"></i>
       </button>
     </div>
   );
