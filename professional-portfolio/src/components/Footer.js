@@ -39,7 +39,7 @@ function Footer() {
         <a target="_blank" href="mailto:relero90@gmail.com">
           <i style={styles.icon} className="fa-regular fa-envelope"></i>
         </a>
-        {/* Resume icon link */}
+        {/* Resume icon link - file in public needs to be replaced with updated resume */}
         <a href="/Resume-Stand-In.pdf" download>
           <i style={styles.icon} className="fa-solid fa-download"></i>
         </a>
