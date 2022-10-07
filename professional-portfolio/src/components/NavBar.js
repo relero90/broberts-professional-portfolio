@@ -1,5 +1,6 @@
 // A single Navigation component within the header that will be used to conditionally render the different sections of your portfobuttono
 import React, { useState } from "react";
+import colors from "../utils/colorScheme";
 
 const styles = {
   navBar: {
@@ -10,14 +11,14 @@ const styles = {
   navButton: {
     width: "20%",
     background: "#212529",
-    color: "#F8F9FA",
+    color: colors.light1,
     borderRadius: "40%",
-    border: "solid 2px #3c6e71",
+    border: `solid 2px ${colors.accent}`,
     fontSize: "3vw",
   },
   navLink: {
     textDecoration: "none",
-    color: "#F8F9FA",
+    color: colors.light1,
   },
 };
 

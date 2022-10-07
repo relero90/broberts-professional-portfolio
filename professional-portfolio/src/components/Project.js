@@ -1,5 +1,6 @@
 // A single Project component that will be used multiple times in the Portfolio section
 import React, { useState } from "react";
+import colors from "../utils/colorScheme";
 
 const styles = {
   gallery: {
@@ -8,7 +9,7 @@ const styles = {
     justifyContent: "center",
     maxHeight: "60vh",
     width: "100vw",
-    border: "solid 2px #F8F9FA",
+    border: `solid 2px ${colors.light1}`,
     borderRadius: "3%",
   },
   galleryBtn: {
@@ -23,7 +24,7 @@ const styles = {
   },
   title: {
     fontFamily: "Petit Formal Script",
-    color: "#F8F9FA",
+    color: colors.light1,
   },
   linkDiv: {
     width: "100%",
@@ -32,7 +33,7 @@ const styles = {
   },
   projectLinks: {
     textDecoration: "none",
-    color: "#F8F9FA",
+    color: colors.light1,
   },
 };
 

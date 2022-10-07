@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import colors from "../utils/colorScheme";
 // A single Header component that appears on multiple pages
 const styles = {
   nameHeader: {
@@ -6,7 +7,7 @@ const styles = {
   },
   h1: {
     textAlign: "center",
-    color: "#F8F9FA",
+    color: colors.light1,
     fontFamily: "Petit Formal Script",
     fontSize: "5vw",
   },

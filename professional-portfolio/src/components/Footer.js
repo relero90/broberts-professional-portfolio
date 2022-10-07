@@ -1,5 +1,6 @@
 // A single Footer component that appears on multiple pages
 import React, { useState } from "react";
+import colors from "../utils/colorScheme";
 
 const styles = {
   footer: {
@@ -15,7 +16,7 @@ const styles = {
     height: "8vh",
   },
   icon: {
-    color: "#F8F9FA",
+    color: colors.light1,
     fontSize: "8vw",
   },
 };
