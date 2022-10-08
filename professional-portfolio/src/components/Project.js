@@ -8,31 +8,32 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     maxHeight: "60vh",
-    width: "100vw",
+    width: "95vw",
     marginTop: "12vh",
+    margin: "2vw",
   },
   galleryBtn: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "5vh",
-    background: colors.accent,
+    // height: "5vh",
+    background: "transparent",
     color: colors.light1,
-    fontSize: "3rem",
-    border: `solid ${colors.accent} 2px`,
-    borderRadius: "8%",
+    fontSize: "2rem",
+    border: `transparent`,
+    // borderRadius: "8%",
   },
-  galBtnOnHover: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "5vh",
-    background: colors.accent,
-    color: colors.med2,
-    fontSize: "3rem",
-    border: `solid ${colors.dark3} 2px`,
-    borderRadius: "8%",
-  },
+  // galBtnOnHover: {
+  //   display: "flex",
+  //   justifyContent: "center",
+  //   alignItems: "center",
+  //   height: "5vh",
+  //   background: colors.accent,
+  //   color: colors.med2,
+  //   fontSize: "3rem",
+  //   border: `solid ${colors.dark3} 2px`,
+  //   borderRadius: "8%",
+  // },
   projectCard: {
     display: "flex",
     flexDirection: "column",
@@ -43,7 +44,11 @@ const styles = {
     width: "80vw",
     height: "65vh",
     // border: `solid 2px ${colors.light1}`,
-    // borderRadius: "3%",
+    borderRadius: "3%",
+  },
+  image: {
+    width: "auto%",
+    maxHeight: "70%",
   },
   details: {
     display: "flex",
@@ -73,7 +78,8 @@ function Project() {
   const projects = [
     {
       index: 0,
-      imagePath: "./kiss-the-cook.png",
+      imagePath:
+        "https://docs.google.com/drawings/d/e/2PACX-1vRzdqenSrp26pwM7izksGIyfBnSQdzL-QVsCN86rhU80UxgYcEDn2TTqHgb-b2fvfIF_9tivOp2tJM_/pub?w=449&h=257",
       alt: "The Kiss the Cook app features a title header and navigation bar aside. The screenshot shows the All Recipes page which includes clickable recipe cards with embedded images and titles.",
       title: "Kiss the Cook",
       appLink: "https://kiss-the-cook.herokuapp.com/",
@@ -81,14 +87,15 @@ function Project() {
     },
     {
       index: 1,
-      imagePath: "./brewfinder.png",
+      imagePath:
+        "https://docs.google.com/drawings/d/e/2PACX-1vRE8UDbiz2h4DOJj8ok3s9sgeTIwGfFPEjTEvz5978LiF4eV025jmDukUEpEPZre_6YhTTXh_mLxe5p/pub?w=741&h=737",
       alt: "The Brewfinder app features a title header, a search aside, a brewery display, and a weather forecaster. Users can enter a city and state and click a button to view randomized brewery data for that city.",
       title: "Brewfinder",
       appLink: "https://relero90.github.io/brewfinder/",
       gitHub: "https://github.com/relero90/brewfinder",
     },
   ];
-  const [hoverState, setHoverState] = useState(false);
+  // const [hoverState, setHoverState] = useState(false);
   const [project, setProject] = useState(projects[0]);
 
   const displayNextProject = () => {
@@ -113,25 +120,24 @@ function Project() {
       setProject(projects[projects.length - 1]);
     }
   };
-  const onMouseEnter = () => {
-    setHoverState(true);
-  };
-  const onMouseLeave = () => {
-    setHoverState(false);
-  };
+  // const onMouseEnter = () => {
+  //   setHoverState(true);
+  // };
+  // const onMouseLeave = () => {
+  //   setHoverState(false);
+  // };
   return (
     <div style={styles.gallery}>
-      <button
-        style={hoverState ? styles.galBtnOnHover : styles.galleryBtn}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-        onClick={displayPreviousProject}
-      >
+      <button style={styles.galleryBtn} onClick={displayPreviousProject}>
         <i className="fa-solid fa-arrow-left"></i>
       </button>
       <div style={styles.projectCard}>
-        <div>
-          <img src={project.imagePath} alt={project.alt}></img>
+        <div style={styles.image}>
+          <img
+            style={styles.image}
+            src={project.imagePath}
+            alt={project.alt}
+          ></img>
         </div>
         <div style={styles.details}>
           <h2 style={styles.title}>{project.title}</h2>
@@ -153,12 +159,7 @@ function Project() {
           </div>
         </div>
       </div>
-      <button
-        style={hoverState ? styles.galBtnOnHover : styles.galleryBtn}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-        onClick={displayNextProject}
-      >
+      <button style={styles.galleryBtn} onClick={displayNextProject}>
         <i className="fa-solid fa-arrow-right"></i>
       </button>
     </div>
