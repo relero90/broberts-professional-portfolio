@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./components/Header";
-import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Project from "./components/Project";
 import Contact from "./components/ContactForm";
@@ -13,12 +12,7 @@ function App() {
     body: {
       display: "flex",
       justifyContent: "center",
-      minHeight: "100vh",
-    },
-    header: {
-      height: "10vh",
-      marginBottom: "8vh",
-      display: "block",
+      minHeight: "90vh",
     },
   };
 
@@ -26,10 +20,7 @@ function App() {
     <Router>
       <div>
         <main>
-          <header style={styles.header}>
-            <Header />
-            <NavBar />
-          </header>
+          <Header />
           <section style={styles.body}>
             <Routes>
               <Route path="/" element={<About />} />

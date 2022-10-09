@@ -1,0 +1,51 @@
+:root {
+  --accent: #3c6e71;
+  --dark3: #212529;
+  --dark2: #343a40;
+  --dark1: #495057;
+  --med3: #6c757d;
+  --med2: #adb5bd;
+  --med1: #ced4da;
+  --light3: #dee2e6;
+  --light2: #e9ecef;
+  --light1: #f8f9fa;
+}
+
+.nameHeader {
+  width: 100vw;
+  padding: 10px;
+}
+
+.nameText {
+  text-align: center;
+  color: var(--light1);
+  font-family: "Petit Formal Script";
+  font-size: 6vw;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.navBtn {
+  border-radius: 40%;
+  border: solid 2px var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  width: 120%;
+  background: var(--dark3);
+  color: var(--light1);
+  font-size: 3vw;
+}
+
+.navBtn:hover {
+  color: var(--accent);
+  box-shadow: 0 0 10px var(--light1);
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--light1);
+}

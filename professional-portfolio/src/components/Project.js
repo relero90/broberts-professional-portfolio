@@ -1,4 +1,3 @@
-// A single Project component that will be used multiple times in the Portfolio section
 import React, { useState } from "react";
 import "../styles/Project.css";
 
@@ -77,27 +76,6 @@ function Project() {
           </p>
         </div>
       </div>
-
-      {/* <div className="projectCard">
-        <div className="imageDiv">
-          <img
-            className="card-img-top"
-            src={project.imagePath}
-            alt={project.alt}
-          ></img>
-        </div>
-        <div className="details">
-          <h2 className="title">{project.title}</h2>
-          <div className="linkDiv">
-            <a className="projectLinks" target="_blank" href={project.appLink}>
-              Deployed App
-            </a>
-            <a className="projectLinks" target="_blank" href={project.gitHub}>
-              GitHub Repository
-            </a>
-          </div>
-        </div>
-      </div> */}
       <button className="galleryBtn" onClick={displayNextProject}>
         <i className="fa-solid fa-arrow-right"></i>
       </button>

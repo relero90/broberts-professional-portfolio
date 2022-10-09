@@ -11,29 +11,24 @@
   --light1: #f8f9fa;
 }
 
-.navBar {
+.footer {
+  display: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
+  height: 8vh;
+}
+.iconDiv {
   display: flex;
   justify-content: space-around;
+  height: 8vh;
 }
-
-.navBtn {
-  border-radius: 40%;
-  border: solid 2px var(--accent);
-}
-
-.navBtn,
-.navBtn a {
-  width: 20%;
-  background: var(--dark3);
+i {
   color: var(--light1);
-  font-size: 3vw;
+  font-size: 6.5vw;
+  margin-bottom: 5vh;
 }
 
-.navBtn:hover {
+i:hover {
   color: var(--accent);
-}
-.navLink {
-  text-decoration: none;
-  color: var(--light1);
 }
