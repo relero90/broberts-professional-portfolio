@@ -1,0 +1,86 @@
+:root {
+  --accent: #3c6e71;
+  --dark3: #212529;
+  --dark2: #343a40;
+  --dark1: #495057;
+  --med3: #6c757d;
+  --med2: #adb5bd;
+  --med1: #ced4da;
+  --light3: #dee2e6;
+  --light2: #e9ecef;
+  --light1: #f8f9fa;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 60vh;
+  width: 90vw;
+  margin-top: 12vh;
+  margin: 2vw;
+}
+
+.galleryBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--light1);
+  font-size: 2rem;
+  border: transparent;
+}
+
+.galleryBtn:hover {
+  color: var(--accent);
+}
+
+.projectCard {
+  background-color: var(--dark3);
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding: 20px;
+  width: 80vw;
+  max-width: 800px;
+  max-height: 100%; */
+  /* border: solid 2px var(--light1);
+  border-radius: 3%; */
+}
+
+.imageDiv {
+  width: auto;
+  height: 60%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.title {
+  font-family: "Petit Formal Script";
+  color: var(--light1);
+  font-size: 5vw;
+}
+
+.linkDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3.5vw;
+}
+
+.projectLinks {
+  text-decoration: "none";
+  color: var(--med2);
+}
+.projectLinks:hover {
+  text-decoration: none;
+  color: var(--accent);
+}
