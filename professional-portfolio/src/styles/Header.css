@@ -50,8 +50,8 @@
   color: var(--light1);
 }
 
+/* When viewport width surpasses typical smartphone size */
 @media only screen and (min-width: 601px) {
-  /* When screen surpasses typical smartphone width */
   header {
     display: flex;
     justify-content: space-between;
