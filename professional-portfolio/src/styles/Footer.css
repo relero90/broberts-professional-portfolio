@@ -24,11 +24,11 @@
   height: 8vh;
 }
 i {
-  color: var(--light1);
+  color: var(--accent);
   font-size: 6.5vw;
   margin-bottom: 5vh;
 }
 
 i:hover {
-  color: var(--accent);
+  color: var(--light1);
 }

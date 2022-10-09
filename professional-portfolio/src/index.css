@@ -1,10 +1,23 @@
+:root {
+  --accent: #3c6e71;
+  --dark3: #212529;
+  --dark2: #343a40;
+  --dark1: #495057;
+  --med3: #6c757d;
+  --med2: #adb5bd;
+  --med1: #ced4da;
+  --light3: #dee2e6;
+  --light2: #e9ecef;
+  --light1: #f8f9fa;
+}
+
 * {
   font-family: "Raleway", sans-serif;
 }
 
 body {
   margin: 0;
-  background-color: #212529; /*dark3*/
+  background-image: linear-gradient(var(--dark3) 0%, var(--med1) 100%);
 }
 
 code {
