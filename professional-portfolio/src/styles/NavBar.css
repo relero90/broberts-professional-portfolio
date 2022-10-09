@@ -1,0 +1,39 @@
+:root {
+  --accent: #3c6e71;
+  --dark3: #212529;
+  --dark2: #343a40;
+  --dark1: #495057;
+  --med3: #6c757d;
+  --med2: #adb5bd;
+  --med1: #ced4da;
+  --light3: #dee2e6;
+  --light2: #e9ecef;
+  --light1: #f8f9fa;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navBtn {
+  border-radius: 40%;
+  border: solid 2px var(--accent);
+}
+
+.navBtn,
+.navBtn a {
+  width: 20%;
+  background: var(--dark3);
+  color: var(--light1);
+  font-size: 3vw;
+}
+
+.navBtn:hover {
+  color: var(--accent);
+}
+.navLink {
+  text-decoration: none;
+  color: var(--light1);
+}
