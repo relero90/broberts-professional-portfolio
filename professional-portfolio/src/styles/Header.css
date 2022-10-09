@@ -31,7 +31,7 @@
 }
 
 .navBtn {
-  border-radius: 40%;
+  border-radius: 50%;
   border: solid 2px var(--accent);
   box-shadow: 0 0 10px var(--accent);
   width: 120%;
@@ -48,4 +48,17 @@
 .navLink {
   text-decoration: none;
   color: var(--light1);
+}
+
+@media only screen and (min-width: 601px) {
+  /* When screen surpasses typical smartphone width */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navBtn {
+    font-size: 2vw;
+  }
 }
