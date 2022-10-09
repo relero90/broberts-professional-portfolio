@@ -1,0 +1,62 @@
+:root {
+  --accent: #3c6e71;
+  --dark3: #212529;
+  --dark2: #343a40;
+  --dark1: #495057;
+  --med3: #6c757d;
+  --med2: #adb5bd;
+  --med1: #ced4da;
+  --light3: #dee2e6;
+  --light2: #e9ecef;
+  --light1: #f8f9fa;
+}
+
+.aboutContainer {
+  color: var(--light1);
+  margin: 8%;
+}
+.skillsContainer {
+  color: var(--accent);
+  margin: 8%;
+  margin-top: 20%;
+}
+.aboutContainer h3,
+.skillsContainer h3 {
+  font-size: 3.5rem;
+}
+
+.skillsContainer h3 {
+  font-family: "Petit Formal Script";
+  text-align: center;
+}
+
+.aboutContainer p,
+.skillsContainer p {
+  font-size: 1.5rem;
+  margin-top: 3%;
+}
+
+.iconsDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.iconsDiv i,
+.iconsDiv img {
+  color: var(--accent);
+  font-size: 5rem;
+  margin: 3rem;
+}
+
+@media only screen and (min-width: 601px) {
+  /* .aboutContainer h3,
+  .skillsContainer h3 {
+    font-size: 3rem;
+  }
+  .aboutContainer p,
+  .skillsContainer p {
+    font-size: 1rem;
+    margin-top: 3%;
+  } */
+}

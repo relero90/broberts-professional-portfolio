@@ -16,19 +16,23 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 8vh;
+  height: 10vh;
+  margin-top: 10vh;
 }
-.iconDiv {
+.footerIconDiv {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   height: 8vh;
-}
-i {
-  color: var(--accent);
-  font-size: 6.5vw;
-  margin-bottom: 5vh;
 }
 
-i:hover {
-  color: var(--light1);
+.footer-icon {
+  color: var(--dark3);
+  font-size: 3rem;
+  /* margin-bottom: 5vh; */
+  margin: 3rem;
+}
+
+.footer-icon:hover {
+  color: var(--accent);
 }

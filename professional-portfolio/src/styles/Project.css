@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 60vh;
+  /* max-height: 60vh; */
   width: 90vw;
   margin-top: 12vh;
   margin: 2vw;
@@ -26,24 +26,35 @@
   align-items: center;
   justify-content: center;
   background: transparent;
-  margin: 3rem;
-  color: var(--light1);
+  margin: 1rem;
   font-size: 2rem;
   border: transparent;
 }
 
-.galleryBtn:hover {
-  color: var(--accent);
+.galleryBtn i {
+  color: var(--light1);
+}
+
+.galleryBtn i:hover,
+.galleryBtn i:focus {
+  color: var(--dark3);
+  text-shadow: 0 0 10px var(--med1), 0 0 15px var(--med1), 0 0 30px;
 }
 
 .projectCard {
   background-color: var(--dark3);
   max-width: 70%;
+  border-radius: 5%;
+  margin: 1rem;
 }
 
 .imageDiv {
   width: auto;
   height: 60%;
+}
+
+.projectImg {
+  border-radius: 5% 5% 0 0;
 }
 
 .details {

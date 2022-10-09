@@ -58,7 +58,7 @@ function Project() {
 
       <div className="projectCard card mb-3">
         <img
-          className="card-img-top"
+          className="card-img-top projectImg"
           src={project.imagePath}
           alt={project.alt}
         ></img>

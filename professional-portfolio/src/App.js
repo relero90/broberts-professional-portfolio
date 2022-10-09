@@ -12,7 +12,8 @@ function App() {
     body: {
       display: "flex",
       justifyContent: "center",
-      minHeight: "90vh",
+      alignItems: "center",
+      minHeight: "100%",
     },
   };
 
