@@ -6,7 +6,7 @@
 
 This is a web application that I built to showcase my work as a web developer. Check it out to see what kinds of projects I have been working on and to find ways to get in contact with me.
 
-Check it out by [clicking here](https://relero90.github.io/).
+Check it out by [clicking here](https://relero90.github.io/professional-portfolio-site/).
 
 !["A screenshot of the working application showing an about section, work section, resume section, and contact section."](./portfolio-screenshot.png)
 
