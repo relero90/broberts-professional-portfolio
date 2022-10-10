@@ -25,7 +25,7 @@ function App() {
           <Header />
           <section style={styles.body}>
             <Routes>
-              <Route path="/" element={<About />} />
+              <Route path="/professional-portfolio-site" element={<About />} />
               <Route path="/work" element={<Project />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/contact" element={<Contact />} />
