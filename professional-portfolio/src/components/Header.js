@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import "../styles/Header.css";
 
 function NavBar() {
+  // selected state - changes styling on navbar button for selected section
+
   return (
     <header>
       <div className="nameHeader">

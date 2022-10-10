@@ -36,6 +36,8 @@ function About() {
             title="MySQL"
             src="https://img.icons8.com/ios-filled/50/FFFFFF/mysql-logo.png"
           />
+          {/* <img src="./assets/mongoDB-icon.png" alt="MongoDB Icon" /> */}
+
           <iconify-icon icon="logos:handlebars"></iconify-icon>
 
           <i title="React" className="fa-brands fa-react"></i>

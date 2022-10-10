@@ -1,0 +1,56 @@
+:root {
+  --accent: #3c6e71;
+  --dark3: #212529;
+  --dark2: #343a40;
+  --dark1: #495057;
+  --med3: #6c757d;
+  --med2: #adb5bd;
+  --med1: #ced4da;
+  --light3: #dee2e6;
+  --light2: #e9ecef;
+  --light1: #f8f9fa;
+}
+
+.contactFormDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light1);
+  background-color: var(--dark1);
+  border-radius: 5%;
+  width: 70%;
+  margin: 2rem;
+}
+
+.contactFormDiv h3 {
+  margin: 1rem;
+}
+
+.contactFormDiv h6 a {
+  color: var(--light1);
+}
+.contactFormDiv h6 a:hover {
+  color: var(--dark3);
+  text-decoration: none;
+}
+
+form {
+  width: 100%;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.submitBtn {
+  background-color: var(--accent);
+  color: var(--dark3);
+  margin: 1rem;
+  padding: 10px;
+  width: 25%;
+}
+.submitBtn:hover {
+  background-color: var(--dark3);
+  color: var(--light1);
+  margin: 1rem;
+  padding: 10px;
+  width: 25%;
+}
