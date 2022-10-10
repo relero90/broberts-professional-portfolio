@@ -22,8 +22,8 @@
 }
 
 .headshot {
-  width: 12vw;
-  height: 12vw;
+  width: auto;
+  height: 8rem;
   border-radius: 50%;
   margin: 1rem;
 }
