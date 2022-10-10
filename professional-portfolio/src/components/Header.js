@@ -13,7 +13,7 @@ function NavBar() {
       </div>
       <div className="navBar">
         {/* About Button */}
-        <Link to={{ pathname: "/professional-portfolio-site/" }}>
+        <Link to={{ pathname: "/" }}>
           <button className="navBtn" id="about">
             About
           </button>
