@@ -10,3 +10,24 @@
   --light2: #e9ecef;
   --light1: #f8f9fa;
 }
+
+.resumeDownload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.resumeTitle {
+  font-family: "Petit Formal Script";
+}
+.downloadBtn {
+  background-color: var(--accent);
+  border-radius: 5px;
+  margin: 1rem;
+  box-shadow: 0 0 10px var(--light1);
+}
+
+.downloadBtn:hover {
+  color: var(--light1);
+}

@@ -25,16 +25,11 @@ function NavBar() {
           </button>
         </Link>
         {/* Resume Download Button */}
-        <a
-          className="navLink"
-          title="Download Resume PDF"
-          href="/Resume-Stand-In.pdf"
-          download
-        >
+        <Link to={{ pathname: "/resume" }}>
           <button className="navBtn" id="resume">
             Resume
           </button>
-        </a>
+        </Link>
 
         {/* Contact Button */}
         <Link to={{ pathname: "/contact" }}>

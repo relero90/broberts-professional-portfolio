@@ -1,8 +1,16 @@
 import React, { useState } from "react";
-import "./styles/Resume.css";
+import "./Resume.css";
+import resume from "./Resume.pdf";
 
 function Resume() {
-  return <div>resume here</div>;
+  return (
+    <div className="resumeDownload">
+      <h3 className="resumeTitle">Resume</h3>
+      <a title="Download Resume" href={resume} download>
+        <button className="btn downloadBtn">Click to Download</button>
+      </a>
+    </div>
+  );
 }
 
 export default Resume;

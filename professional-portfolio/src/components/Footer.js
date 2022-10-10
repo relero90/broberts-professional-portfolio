@@ -1,6 +1,7 @@
 // A single Footer component that appears on multiple pages
 import React, { useState } from "react";
 import "./styles/Footer.css";
+import resume from "../pages/resume/Resume.pdf";
 
 function Footer() {
   return (
@@ -27,7 +28,7 @@ function Footer() {
           <i className="footer-icon fa-regular fa-envelope"></i>
         </a>
         {/* Resume icon link - file in public needs to be replaced with updated resume */}
-        <a title="Download Resume PDF" href="/Resume-Stand-In.pdf" download>
+        <a title="Download Resume PDF" href={resume} download>
           <i className="footer-icon fa-solid fa-download"></i>
         </a>
       </div>
