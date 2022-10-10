@@ -44,7 +44,7 @@
 .projectCard {
   background-color: var(--dark3);
   max-width: 70%;
-  border-radius: 5%;
+  border-radius: 15px;
   margin: 1rem;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .projectImg {
-  border-radius: 5% 5% 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .details {

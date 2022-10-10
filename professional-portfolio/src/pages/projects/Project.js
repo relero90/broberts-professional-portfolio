@@ -1,30 +1,8 @@
 import React, { useState } from "react";
 import "./Project.css";
-import brewfinder from "./images/brewfinder.png";
-import kissTheCook from "./images/kiss-the-cook.png";
+import projects from "./data.js";
 
 function Project() {
-  const projects = [
-    {
-      index: 0,
-      imagePath: kissTheCook,
-      alt:
-        "The Kiss the Cook app features a title header and navigation bar aside. The screenshot shows the All Recipes page which includes clickable recipe cards with embedded images and titles.",
-      title: "Kiss the Cook",
-      appLink: "https://kiss-the-cook.herokuapp.com/",
-      gitHub: "https://github.com/madrodgerflynn/Kiss_The_Cook",
-    },
-    {
-      index: 1,
-      imagePath: brewfinder,
-      alt:
-        "The Brewfinder app features a title header, a search aside, a brewery display, and a weather forecaster. Users can enter a city and state and click a button to view randomized brewery data for that city.",
-      title: "Brewfinder",
-      appLink: "https://relero90.github.io/brewfinder/",
-      gitHub: "https://github.com/relero90/brewfinder",
-    },
-  ];
-
   const [project, setProject] = useState(projects[0]);
 
   const displayNextProject = () => {
@@ -66,7 +44,7 @@ function Project() {
           <h5 className="card-title title">{project.title}</h5>
           <p className="projectLinks card-text">
             <a className="projectLinks" target="_blank" href={project.appLink}>
-              Deployed App
+              Check it Out
             </a>
           </p>
           <p className="projectLinks card-text">
