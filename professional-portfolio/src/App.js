@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./components/Header";
-import About from "./components/About";
-import Project from "./components/Project";
-import Contact from "./components/ContactForm";
+import About from "./pages/about/About.js";
+import Project from "./pages/projects/Project";
+import Contact from "./pages/contact/ContactForm";
 import Footer from "./components/Footer";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

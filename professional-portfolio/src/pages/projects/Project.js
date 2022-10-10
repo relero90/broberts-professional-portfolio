@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import "../styles/Project.css";
+import "./Project.css";
+import brewfinder from "./images/brewfinder.png";
+import kissTheCook from "./images/kiss-the-cook.png";
 
 function Project() {
   const projects = [
     {
       index: 0,
-      imagePath:
-        "https://docs.google.com/drawings/d/e/2PACX-1vRzdqenSrp26pwM7izksGIyfBnSQdzL-QVsCN86rhU80UxgYcEDn2TTqHgb-b2fvfIF_9tivOp2tJM_/pub?w=449&h=257",
+      imagePath: kissTheCook,
       alt:
         "The Kiss the Cook app features a title header and navigation bar aside. The screenshot shows the All Recipes page which includes clickable recipe cards with embedded images and titles.",
       title: "Kiss the Cook",
@@ -15,8 +16,7 @@ function Project() {
     },
     {
       index: 1,
-      imagePath:
-        "https://docs.google.com/drawings/d/e/2PACX-1vRE8UDbiz2h4DOJj8ok3s9sgeTIwGfFPEjTEvz5978LiF4eV025jmDukUEpEPZre_6YhTTXh_mLxe5p/pub?w=741&h=737",
+      imagePath: brewfinder,
       alt:
         "The Brewfinder app features a title header, a search aside, a brewery display, and a weather forecaster. Users can enter a city and state and click a button to view randomized brewery data for that city.",
       title: "Brewfinder",

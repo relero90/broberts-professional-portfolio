@@ -35,19 +35,23 @@
 }
 
 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   width: 100%;
   margin: 2rem;
   padding: 2rem;
 }
 
-.submitBtn {
+.custom-btn {
+  align-self: center;
   background-color: var(--accent);
   color: var(--dark3);
   margin: 1rem;
   padding: 10px;
   width: 25%;
 }
-.submitBtn:hover {
+.custom-btn:hover {
   background-color: var(--dark3);
   color: var(--light1);
   margin: 1rem;

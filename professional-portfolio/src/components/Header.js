@@ -1,7 +1,7 @@
 // A single Navigation component within the header that will be used to conditionally render the different sections of your portfobuttono
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/Header.css";
+import "./styles/Header.css";
 
 function NavBar() {
   // selected state - changes styling on navbar button for selected section
@@ -14,11 +14,15 @@ function NavBar() {
       <div className="navBar">
         {/* About Button */}
         <Link to={{ pathname: "/" }}>
-          <button className="navBtn">About</button>
+          <button className="navBtn" id="about">
+            About
+          </button>
         </Link>
         {/* Work Button */}
         <Link to={{ pathname: "/work" }}>
-          <button className="navBtn">Work</button>
+          <button className="navBtn" id="work">
+            Work
+          </button>
         </Link>
         {/* Resume Download Button */}
         <a
@@ -27,12 +31,16 @@ function NavBar() {
           href="/Resume-Stand-In.pdf"
           download
         >
-          <button className="navBtn">Resume</button>
+          <button className="navBtn" id="resume">
+            Resume
+          </button>
         </a>
 
         {/* Contact Button */}
         <Link to={{ pathname: "/contact" }}>
-          <button className="navBtn">Contact</button>
+          <button className="navBtn" id="contact">
+            Contact
+          </button>
         </Link>
       </div>
     </header>

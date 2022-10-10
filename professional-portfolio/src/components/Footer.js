@@ -1,6 +1,6 @@
 // A single Footer component that appears on multiple pages
 import React, { useState } from "react";
-import "../styles/Footer.css";
+import "./styles/Footer.css";
 
 function Footer() {
   return (
