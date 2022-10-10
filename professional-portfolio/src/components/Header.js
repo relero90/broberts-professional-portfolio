@@ -17,20 +17,20 @@ function NavBar() {
           </button>
         </Link>
         {/* Work Button */}
-        <Link to={{ pathname: "/work" }}>
+        <Link to={{ pathname: "/professional-portfolio-site/work" }}>
           <button className="navBtn" id="work">
             Work
           </button>
         </Link>
         {/* Resume Download Button */}
-        <Link to={{ pathname: "/resume" }}>
+        <Link to={{ pathname: "/professional-portfolio-site/resume" }}>
           <button className="navBtn" id="resume">
             Resume
           </button>
         </Link>
 
         {/* Contact Button */}
-        <Link to={{ pathname: "/contact" }}>
+        <Link to={{ pathname: "/professional-portfolio-site/contact" }}>
           <button className="navBtn" id="contact">
             Contact
           </button>
