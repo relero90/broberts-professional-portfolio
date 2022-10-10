@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import "./styles/Footer.css";
 import resume from "../pages/resume/Resume.pdf";
+import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
 
 function Footer() {
   return (
