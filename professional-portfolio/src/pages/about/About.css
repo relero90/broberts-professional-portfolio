@@ -19,6 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100vw;
 }
 
 .headshot {
@@ -35,7 +36,7 @@
 }
 .aboutContainer h3,
 .skillsContainer h3 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .skillsContainer h3 {
@@ -61,7 +62,10 @@
   margin: 3rem;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (max-width: 600px) {
+  .welcome {
+    flex-direction: column;
+  }
   /* .aboutContainer h3,
   .skillsContainer h3 {
     font-size: 3rem;
