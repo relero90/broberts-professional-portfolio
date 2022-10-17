@@ -1,9 +1,60 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
+
 const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 const phoneRegex = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
 
 function Contact() {
+  let [senderName, setSenderName] = useState("");
+  let [senderEmail, setSenderEmail] = useState("");
+  let [senderPhone, setSenderPhone] = useState("");
+  let [message, setMessage] = useState("");
+
+  let contactFormInputs = {
+    sender_name: senderName,
+    sender_email: senderEmail,
+    sender_phone: senderPhone,
+    message: message,
+  };
+
+  function updateTextState(event) {
+    switch (event.target.name) {
+      case "sender_name":
+        setSenderName(event.target.value);
+        break;
+      case "sender_email":
+        setSenderEmail(event.target.value);
+        break;
+      case "sender_phone":
+        setSenderPhone(event.target.value);
+        break;
+      case "message":
+        setMessage(event.target.value);
+        break;
+    }
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    emailjs
+      .send(
+        "portfolio_email",
+        "portfolio_contact_form",
+        contactFormInputs,
+        "-nVgwSSo7LJY0IG8O"
+      )
+      .then(
+        (response) => {
+          console.log("Email sent.", response.status, response.text);
+        },
+        (err) => {
+          console.log("Something went wrong...", err);
+        }
+      );
+  }
+
   // check name and message
   // input needs to be the input DOM element
   // feedback needs to be the feedback paragraph element
@@ -42,17 +93,18 @@ function Contact() {
     <div className="contactFormDiv">
       <h3>Contact Me</h3>
       <h6>
-        <a href="mailto:brobertswebdev@gmail.com">brobertswebdev@gmail.com</a>
+        <a href="mailto:brobertswebdev@gmail.com">relero90@gmail.com</a>
       </h6>
       <h6>(520) 360-3373</h6>
-      <form id="contact-form">
+      <form id="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label for="exampleFormControlInput1">Your Name</label>
           <input
-            type="name"
+            type="text"
             className="form-control nameInput"
             placeholder="First Last"
-            name="user_name"
+            name="sender_name"
+            onChange={updateTextState}
             onMouseLeave={function() {
               checkIfEmpty(
                 document.querySelector(".nameInput"),
@@ -69,7 +121,8 @@ function Contact() {
             type="email"
             className="form-control emailInput"
             placeholder="name@example.com"
-            name="user_email"
+            name="sender_email"
+            onChange={updateTextState}
             onMouseLeave={function() {
               regexValidate(
                 document.querySelector(".emailInput"),
@@ -87,7 +140,8 @@ function Contact() {
             type="phone"
             className="form-control phoneInput"
             placeholder="000-000-0000"
-            name="user_phone"
+            name="sender_phone"
+            onChange={updateTextState}
             onMouseLeave={function() {
               regexValidate(
                 document.querySelector(".phoneInput"),
@@ -105,6 +159,7 @@ function Contact() {
             className="form-control messageInput"
             rows="3"
             name="message"
+            onChange={updateTextState}
             onMouseLeave={function() {
               checkIfEmpty(
                 document.querySelector(".messageInput"),
