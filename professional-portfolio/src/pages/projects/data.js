@@ -1,3 +1,4 @@
+import bubbleDungeonz from "./images/bubble-dungeonz.png";
 import brewfinder from "./images/brewfinder.png";
 import kissTheCook from "./images/kiss-the-cook.png";
 import employeeTracker from "./images/mysqlEmployeeTracker.png";
@@ -7,20 +8,21 @@ import readmeGen from "./images/READMEgen.png";
 const projects = [
   {
     index: 0,
+    imagePath: bubbleDungeonz,
+    alt:
+      "Bubble Dungeonz is a game hosting platform that includes user authentication and a chat feature.",
+    title: "Bubble Dungeonz",
+    appLink: "https://sleepy-mountain-95539.herokuapp.com/",
+    gitHub: "https://github.com/l1keafox/bubbleDungeonz",
+  },
+  {
+    index: 1,
     imagePath: kissTheCook,
     alt:
       "The Kiss the Cook app features a title header and navigation bar aside. The screenshot shows the All Recipes page which includes clickable recipe cards with embedded images and titles.",
     title: "Kiss the Cook",
     appLink: "https://kiss-the-cook.herokuapp.com/",
     gitHub: "https://github.com/madrodgerflynn/Kiss_The_Cook",
-  },
-  {
-    index: 1,
-    imagePath: "#",
-    alt: "Coming soon!",
-    title: "Project 3",
-    appLink: "#",
-    gitHub: "#",
   },
   {
     index: 2,
