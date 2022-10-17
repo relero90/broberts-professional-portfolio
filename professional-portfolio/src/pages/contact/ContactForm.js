@@ -38,6 +38,7 @@ function Contact() {
   function handleSubmit(event) {
     event.preventDefault();
 
+    const feedbackField = document.querySelector(".sendFeedback");
     emailjs
       .send(
         "portfolio_email",
@@ -48,9 +49,13 @@ function Contact() {
       .then(
         (response) => {
           console.log("Email sent.", response.status, response.text);
+          feedbackField.classList.add("messageSent");
+          feedbackField.textContent = "Your message was sent.";
         },
         (err) => {
           console.log("Something went wrong...", err);
+          feedbackField.classList.add("messageProblem");
+          feedbackField.textContent = "Something went wrong...";
         }
       );
   }
@@ -172,6 +177,7 @@ function Contact() {
         <button type="submit" className="custom-btn btn">
           Send Email
         </button>
+        <p className="sendFeedback"></p>
       </form>
     </div>
   );
