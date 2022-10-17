@@ -22,11 +22,11 @@ function About() {
       <div className="aboutContainer">
         <div className="welcome">
           <h3>Welcome to my professional portfolio.</h3>
-          <img
+          {/* <img
             src={headshot}
             alt="A photo of Rebecca Roberts"
             className="headshot"
-          />
+          /> */}
         </div>
         <p>
           My name is Becca Roberts and I am a full-stack web developer. I am a
