@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useCallback } from "react";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
+import particlesOptions from "./particles.json";
+
 import Header from "./components/Header";
 import About from "./pages/about/About.js";
 import Project from "./pages/projects/Project";
@@ -9,6 +13,10 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
+  const particlesInit = useCallback((main) => {
+    loadFull(main);
+  }, []);
+
   const styles = {
     body: {
       display: "flex",
@@ -22,6 +30,7 @@ function App() {
     <Router>
       <div>
         <main>
+          <Particles options={particlesOptions} init={particlesInit} />
           <Header />
           <section style={styles.body}>
             <Routes>
