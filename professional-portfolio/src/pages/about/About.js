@@ -9,7 +9,7 @@ import {
   SiHandlebarsdotjs,
 } from "react-icons/si";
 import { FaNode, FaNpm, FaReact } from "react-icons/fa";
-import headshot from "./headshot.jpeg";
+import avatar from "./avatar1.png";
 
 function About() {
   // Components:
@@ -22,11 +22,11 @@ function About() {
       <div className="aboutContainer">
         <div className="welcome">
           <h3>Welcome to my professional portfolio.</h3>
-          {/* <img
-            src={headshot}
-            alt="A photo of Rebecca Roberts"
+          <img
+            src={avatar}
+            alt="An avatar for Becca - purple hair and a round face"
             className="headshot"
-          /> */}
+          />
         </div>
         <p>
           My name is Becca Roberts and I am a full-stack web developer. I am a
