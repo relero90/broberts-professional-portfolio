@@ -29,8 +29,8 @@ code {
     monospace;
 }
 
-.particleBackground {
-  z-index: -1;
+#tsparticles {
+  z-index: -1 !important;
   position: absolute;
   position: fixed;
   height: 100%;
@@ -39,8 +39,4 @@ code {
   padding: 0;
   left: 0;
   top: 0;
-}
-
-.aboveParticles {
-  z-index: 1;
 }

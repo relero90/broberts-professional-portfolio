@@ -50,11 +50,7 @@ function App() {
         </section>
         <Footer />
       </main>
-      <Particles
-        options={particlesOptions}
-        init={particlesInit}
-        className="particlesBackground"
-      />
+      <Particles options={particlesOptions} init={particlesInit} />
     </Router>
   );
 }
