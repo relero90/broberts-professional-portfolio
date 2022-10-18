@@ -3,6 +3,10 @@
 .headerNav {
   padding: 1rem;
   margin: 0 6rem 0 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .nameText {
@@ -11,7 +15,7 @@
   font-family: "Petit Formal Script";
   text-shadow: 5px 0 var(--accent);
   font-size: 4rem;
-  width: 100%;
+  width: 90vw;
 }
 
 .navBar {
@@ -26,10 +30,10 @@
   border-radius: 30px;
   border: solid 2px var(--accent);
   box-shadow: 0 0 10px var(--accent);
-  /* width: 120%; */
+  width: 80vw;
   background: var(--dark3);
   color: var(--light1);
-  font-size: 3vw;
+  font-size: 5vw;
   margin: 1rem;
 }
 
@@ -58,6 +62,7 @@
 
   .navBtn {
     font-size: 2vw;
+    width: 12vw;
   }
   .nameText {
     text-align: left;
