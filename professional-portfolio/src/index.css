@@ -16,8 +16,8 @@
 }
 
 body {
-  margin: 0;
   background-image: linear-gradient(var(--dark3) 0%, var(--med1) 100%);
+  min-height: fit-content;
 }
 
 main {
@@ -39,4 +39,9 @@ code {
   padding: 0;
   left: 0;
   top: 0;
+}
+
+.root {
+  height: fit-content;
+  padding-bottom: 5rem;
 }

@@ -20,7 +20,7 @@
   color: var(--light1);
 }
 .contactFormDiv h6 a:hover {
-  color: var(--dark3);
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ form {
 
 .messageSent {
   text-align: center;
-  color: var(--accent);
+  color: var(--success);
   font-size: 1.5rem;
 }
 .messageProblem {
@@ -54,7 +54,7 @@ form {
 .custom-btn {
   align-self: center;
   background-color: var(--accent);
-  color: var(--dark3);
+  color: var(--light1);
   font-size: 1.5rem;
   margin: 1rem;
   padding-left: 20px;
@@ -63,9 +63,9 @@ form {
   border-radius: 30px;
 }
 .custom-btn:hover {
-  background-color: var(--dark3);
+  background-color: var(--med3);
   box-shadow: 0 0 20px var(--accent);
-  color: var(--light1);
+  color: var(--accent);
 }
 
 @media only screen and (max-width: 650px) {

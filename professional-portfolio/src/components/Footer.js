@@ -14,24 +14,36 @@ function Footer() {
           title="GitHub Profile"
           target="_blank"
           href="https://github.com/relero90"
+          className="iconAnchor"
         >
-          <i className="footer-icon fa-brands fa-github"></i>
+          <FaGithub className="footer-icon" />
         </a>
         {/* LinkedIn icon link */}
         <a
           title="LinkedIn Profile"
           target="_blank"
           href="https://www.linkedin.com/in/becca-roberts-a87729240/"
+          className="iconAnchor"
         >
-          <i className="footer-icon fa-brands fa-linkedin"></i>
+          <FaLinkedin className="footer-icon" />
         </a>
         {/* Email icon link */}
-        <a title="Email" target="_blank" href="mailto:relero90@gmail.com">
-          <i className="footer-icon fa-regular fa-envelope"></i>
+        <a
+          title="Email"
+          target="_blank"
+          href="mailto:relero90@gmail.com"
+          className="iconAnchor"
+        >
+          <MdOutlineMail className="footer-icon" />
         </a>
         {/* Resume icon link - file in public needs to be replaced with updated resume */}
-        <a title="Download Resume PDF" href={resume} download>
-          <i className="footer-icon fa-solid fa-download"></i>
+        <a
+          title="Download Resume PDF"
+          href={resume}
+          download
+          className="iconAnchor"
+        >
+          <FaFileDownload className="footer-icon" />
         </a>
       </div>
     </div>
