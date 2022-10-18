@@ -56,10 +56,22 @@
   width: 100%;
 }
 
+.cardTextDiv {
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   font-family: "Petit Formal Script";
-  color: var(--light1);
+  color: var(--success);
   font-size: 5vw;
+}
+
+.projectDescription {
+  color: var(--light1);
+  font-size: 2vw;
+  width: 80%;
+  align-self: center;
 }
 
 .linkDiv {

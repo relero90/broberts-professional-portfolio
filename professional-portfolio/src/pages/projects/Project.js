@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Project.css";
 import projects from "./data.js";
+import { FaGithub } from "react-icons/fa";
+import { IoIosRocket } from "react-icons/io";
 
 function Project() {
   const [project, setProject] = useState(projects[0]);
@@ -40,18 +42,17 @@ function Project() {
           src={project.imagePath}
           alt={project.alt}
         ></img>
-        <div className="card-body text-center">
+        <div className="card-body text-center cardTextDiv">
           <h5 className="card-title title">{project.title}</h5>
-          <p className="projectLinks card-text">
+          <p className="projectDescription">{project.description}</p>
+          <div className="linkDiv">
             <a className="projectLinks" target="_blank" href={project.appLink}>
-              Check it Out
+              <IoIosRocket /> Check it Out <IoIosRocket />
             </a>
-          </p>
-          <p className="projectLinks card-text">
             <a className="projectLinks" target="_blank" href={project.gitHub}>
-              GitHub Repository
+              <FaGithub /> GitHub Repo <FaGithub />
             </a>
-          </p>
+          </div>
         </div>
       </div>
       <button className="galleryBtn" onClick={displayNextProject}>
