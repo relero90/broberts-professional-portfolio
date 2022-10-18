@@ -2,23 +2,16 @@
 
 .headerNav {
   padding: 1rem;
-}
-
-.nameHeader {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
-  text-shadow: 0 0 10px var(--accent), 0 0 15px var(--accent), 0 0 30px;
-  z-index: 1;
+  margin: 0 6rem 0 6rem;
 }
 
 .nameText {
   text-align: center;
   color: var(--light1);
   font-family: "Petit Formal Script";
+  text-shadow: 5px 0 var(--accent);
   font-size: 4rem;
+  width: 100%;
 }
 
 .navBar {
@@ -61,5 +54,8 @@
 
   .navBtn {
     font-size: 2vw;
+  }
+  .nameText {
+    text-align: left;
   }
 }

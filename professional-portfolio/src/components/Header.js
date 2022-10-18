@@ -7,9 +7,7 @@ import "./styles/Header.css";
 function NavBar() {
   return (
     <header className="headerNav">
-      <div className="nameHeader">
-        <h1 className="nameText">Becca Roberts</h1>
-      </div>
+      <h1 className="nameText">Becca Roberts</h1>
       <div className="navBar">
         {/* About Button */}
         <Link to={{ pathname: "/professional-portfolio-site" }}>
