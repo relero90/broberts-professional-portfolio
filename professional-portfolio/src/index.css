@@ -16,11 +16,17 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background-image: linear-gradient(var(--dark3) 0%, var(--med1) 100%);
   min-height: fit-content;
+  width: 100vw;
 }
 
 main {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
   min-height: 100vh;
 }
 
@@ -44,4 +50,12 @@ code {
 .root {
   height: fit-content;
   padding-bottom: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .root {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+  }
 }

@@ -8,6 +8,7 @@ import { MdOutlineMail } from "react-icons/md";
 function Footer() {
   return (
     <div className="footer" id="footer">
+      <h3 className="footerH3">Find me at...</h3>
       <div className="footerIconDiv">
         {/* GitHub icon link */}
         <a
