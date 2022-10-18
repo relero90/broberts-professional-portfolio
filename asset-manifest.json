@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/professional-portfolio-site/static/css/main.58eb3e0e.css",
+    "main.css": "/professional-portfolio-site/static/css/main.3f4fc40f.css",
     "main.js": "/professional-portfolio-site/static/js/main.021073d2.js",
     "static/js/787.10c1ab8b.chunk.js": "/professional-portfolio-site/static/js/787.10c1ab8b.chunk.js",
     "static/media/kiss-the-cook.png": "/professional-portfolio-site/static/media/kiss-the-cook.e69c8b0d07b612d2af15.png",
@@ -12,12 +12,12 @@
     "static/media/bubble-dungeonz.png": "/professional-portfolio-site/static/media/bubble-dungeonz.9d1c110e79f8b8adb135.png",
     "static/media/Resume.pdf": "/professional-portfolio-site/static/media/Resume.bb835acb69367b0d6bb2.pdf",
     "index.html": "/professional-portfolio-site/index.html",
-    "main.58eb3e0e.css.map": "/professional-portfolio-site/static/css/main.58eb3e0e.css.map",
+    "main.3f4fc40f.css.map": "/professional-portfolio-site/static/css/main.3f4fc40f.css.map",
     "main.021073d2.js.map": "/professional-portfolio-site/static/js/main.021073d2.js.map",
     "787.10c1ab8b.chunk.js.map": "/professional-portfolio-site/static/js/787.10c1ab8b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58eb3e0e.css",
+    "static/css/main.3f4fc40f.css",
     "static/js/main.021073d2.js"
   ]
 }
