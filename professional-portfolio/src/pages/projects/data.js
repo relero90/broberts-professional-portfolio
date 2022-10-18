@@ -22,7 +22,7 @@ const projects = [
     alt: "The Kiss the Cook app features a title header and navigation bar aside. The screenshot shows the All Recipes page which includes clickable recipe cards with embedded images and titles.",
     title: "Kiss the Cook",
     description:
-      "A full stack recipe app for the blog-averse home cook featuring a MySQL database, ExpressJS server, Node, and Handlebars template engine.",
+      "A full stack recipe application for the blog-averse home cook. Featuring a MySQL database, ExpressJS server, NodeJS front end with the Handlebars template engine.",
     appLink: "https://kiss-the-cook.herokuapp.com/",
     gitHub: "https://github.com/madrodgerflynn/Kiss_The_Cook",
   },
