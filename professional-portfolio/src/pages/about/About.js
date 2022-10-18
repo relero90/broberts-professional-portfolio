@@ -9,25 +9,18 @@ import {
   SiHandlebarsdotjs,
 } from "react-icons/si";
 import { FaNode, FaNpm, FaReact } from "react-icons/fa";
-import avatar from "./avatar1.png";
+import avatar from "./avatar.png";
 
 function About() {
-  // Components:
-  // Quick Bio / Brand statement
-  // Languages / Technologies section w/ icons
-  // HTML5, Bootstrap, JS, Node, NPM, MySQL/WorkBench, MongoDB/Compass, Handlebars, ReactJS
-
   return (
     <div>
       <div className="aboutContainer">
-        <div className="welcome">
-          <h3>Welcome to my professional portfolio.</h3>
-          <img
-            src={avatar}
-            alt="An avatar for Becca - purple hair and a round face"
-            className="headshot"
-          />
-        </div>
+        <img
+          src={avatar}
+          alt="An avatar for Becca - purple hair and a round face"
+          className="avatar"
+        />
+        <h3>Welcome to my professional portfolio.</h3>
         <p>
           My name is Becca Roberts and I am a full-stack web developer. I am a
           collaborative thinker with an eye for small details and a passion for
