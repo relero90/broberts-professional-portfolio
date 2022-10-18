@@ -20,15 +20,27 @@ body {
   background-image: linear-gradient(var(--dark3) 0%, var(--med1) 100%);
 }
 
+main {
+  min-height: 100vh;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .particleBackground {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
   z-index: -1;
+  position: absolute;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+
+.aboveParticles {
+  z-index: 1;
 }

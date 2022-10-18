@@ -28,31 +28,33 @@ function App() {
 
   return (
     <Router>
-      <div>
-        <main>
-          <Particles options={particlesOptions} init={particlesInit} />
-          <Header />
-          <section style={styles.body}>
-            <Routes>
-              <Route path="/professional-portfolio-site" element={<About />} />
-              <Route path="/" element={<About />} />
-              <Route
-                path="/professional-portfolio-site/work"
-                element={<Project />}
-              />
-              <Route
-                path="/professional-portfolio-site/resume"
-                element={<Resume />}
-              />
-              <Route
-                path="/professional-portfolio-site/contact"
-                element={<Contact />}
-              />
-            </Routes>
-          </section>
-          <Footer />
-        </main>
-      </div>
+      <main className="aboveParticles">
+        <Header />
+        <section style={styles.body}>
+          <Routes>
+            <Route path="/professional-portfolio-site" element={<About />} />
+            <Route path="/" element={<About />} />
+            <Route
+              path="/professional-portfolio-site/work"
+              element={<Project />}
+            />
+            <Route
+              path="/professional-portfolio-site/resume"
+              element={<Resume />}
+            />
+            <Route
+              path="/professional-portfolio-site/contact"
+              element={<Contact />}
+            />
+          </Routes>
+        </section>
+        <Footer />
+      </main>
+      <Particles
+        options={particlesOptions}
+        init={particlesInit}
+        className="particlesBackground"
+      />
     </Router>
   );
 }
