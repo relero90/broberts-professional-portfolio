@@ -30,12 +30,22 @@ const projects = [
     index: 2,
     imagePath: employeeTracker,
     alt: "This is a command line app designed to help business owners view and manage employee data for departments, roles, and employees to more easily organize and plan. The user can add information to and delete information from the SQL database. Existing data for departments, roles, or employees can be viewed as a formatted table in the command line.",
-    title: "MySQL Employee Tracker App",
+    title: "MySQL Employee Tracker",
     description:
       "A command-line application that establishes and manages a company's MySQL database using NodeJS and the Inquirer npm package.",
     appLink:
       "https://external.ink/?to=/watch.screencastify.com/v/IIiLumMhl7kYC7Hjg83M",
     gitHub: "https://github.com/relero90/employee-tracker-app",
+  },
+  {
+    index: 3,
+    imagePath: weatherApp,
+    alt: "This is an app that allows a user to enter a city of her/his choice and receive current and forecast weather conditions information for that city. Current weather information provided includes temperature, wind speed, humidity, and UV index (dynamically color-coded for severity). Forecast weather information is available for 5 days and includes temperature, wind speed, humidity, and feels like. The app stores user search history in localStorage and renders buttons to allow easy access for old search results. Simply click on a pink search history button to view current and forecast conditions for that city",
+    title: "Weather Dashboard",
+    description:
+      "A web application that makes a call to the Open Weather API to display city-specific data to a user.",
+    appLink: "https://relero90.github.io/bc-weather-app/",
+    gitHub: "https://github.com/relero90/bc-weather-app",
   },
   // {
   //   index: 3,
@@ -45,14 +55,6 @@ const projects = [
   //   description: "",
   //   appLink: "https://watch.screencastify.com/v/PtzbW6oYx0rRvAcWve01",
   //   gitHub: "https://github.com/relero90/README-generator",
-  // },
-  // {
-  //   index: 4,
-  //   imagePath: weatherApp,
-  //   alt: "This is an app that allows a user to enter a city of her/his choice and receive current and forecast weather conditions information for that city. Current weather information provided includes temperature, wind speed, humidity, and UV index (dynamically color-coded for severity). Forecast weather information is available for 5 days and includes temperature, wind speed, humidity, and feels like. The app stores user search history in localStorage and renders buttons to allow easy access for old search results. Simply click on a pink search history button to view current and forecast conditions for that city",
-  //   title: "Weather App",
-  //   appLink: "https://relero90.github.io/bc-weather-app/",
-  //   gitHub: "https://github.com/relero90/bc-weather-app",
   // },
   // {
   //   index: 5,

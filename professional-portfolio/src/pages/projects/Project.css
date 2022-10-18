@@ -83,7 +83,7 @@
 .projectLinks {
   text-decoration: "none";
   color: var(--med2);
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .projectLinks:hover {
   text-decoration: none;
