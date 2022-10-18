@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/professional-portfolio-site/static/css/main.54672636.css",
-    "main.js": "/professional-portfolio-site/static/js/main.a7e3932b.js",
+    "main.css": "/professional-portfolio-site/static/css/main.c2b519a5.css",
+    "main.js": "/professional-portfolio-site/static/js/main.be21ca61.js",
     "static/js/787.10c1ab8b.chunk.js": "/professional-portfolio-site/static/js/787.10c1ab8b.chunk.js",
     "static/media/kiss-the-cook.png": "/professional-portfolio-site/static/media/kiss-the-cook.e69c8b0d07b612d2af15.png",
     "static/media/brewfinder.png": "/professional-portfolio-site/static/media/brewfinder.1b1b6ecb1769869c2960.png",
@@ -11,13 +11,14 @@
     "static/media/weatherApp.png": "/professional-portfolio-site/static/media/weatherApp.26170d5b5cd20e879e77.png",
     "static/media/mysqlEmployeeTracker.png": "/professional-portfolio-site/static/media/mysqlEmployeeTracker.514373587c132b368931.png",
     "static/media/Resume.pdf": "/professional-portfolio-site/static/media/Resume.bb835acb69367b0d6bb2.pdf",
+    "static/media/Resume.jpeg": "/professional-portfolio-site/static/media/Resume.c8e30dfb45c80a4715c2.jpeg",
     "index.html": "/professional-portfolio-site/index.html",
-    "main.54672636.css.map": "/professional-portfolio-site/static/css/main.54672636.css.map",
-    "main.a7e3932b.js.map": "/professional-portfolio-site/static/js/main.a7e3932b.js.map",
+    "main.c2b519a5.css.map": "/professional-portfolio-site/static/css/main.c2b519a5.css.map",
+    "main.be21ca61.js.map": "/professional-portfolio-site/static/js/main.be21ca61.js.map",
     "787.10c1ab8b.chunk.js.map": "/professional-portfolio-site/static/js/787.10c1ab8b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54672636.css",
-    "static/js/main.a7e3932b.js"
+    "static/css/main.c2b519a5.css",
+    "static/js/main.be21ca61.js"
   ]
 }
