@@ -15,21 +15,22 @@
 }
 
 .navBar {
-  z-index: 1;
   width: 100%;
+  margin-left: 1.5rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
 }
 
 .navBtn {
   border-radius: 30px;
   border: solid 2px var(--accent);
   box-shadow: 0 0 10px var(--accent);
-  width: 120%;
+  /* width: 120%; */
   background: var(--dark3);
   color: var(--light1);
   font-size: 3vw;
+  margin: 1rem;
 }
 
 .navBtn:hover,
@@ -50,6 +51,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .navBar {
+    flex-wrap: nowrap;
   }
 
   .navBtn {

@@ -1,7 +1,6 @@
 @import "../../utils/colors.css";
 
 .resumeDownload {
-  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,21 +8,41 @@
   height: 100vh;
   max-width: 100vw;
 }
+.resumeCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark1);
+  padding: 2rem;
+  border-radius: 50px;
+  /* box-shadow: 0 0 10px var(--light1); */
+}
 .resumeTitle {
+  color: var(--accent);
   font-family: "Petit Formal Script";
   font-size: 4rem;
+  text-align: center;
+}
+.resumeImg {
+  max-height: 50vh;
 }
 .downloadBtn {
+  align-self: center;
   background-color: var(--accent);
-  border-radius: 5px;
+  color: var(--light1);
+  font-size: 1.5rem;
   margin: 1rem;
-  box-shadow: 0 0 10px var(--light1);
+  padding-left: 20px;
+  padding-right: 20px;
   width: fit-content;
-  font-size: 2rem;
+  border-radius: 30px;
 }
 
 .downloadBtn:hover {
-  color: var(--light1);
+  background-color: var(--med3);
+  box-shadow: 0 0 20px var(--accent);
+  color: var(--accent);
 }
 
 @media only screen and (max-width: 650px) {
