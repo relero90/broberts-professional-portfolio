@@ -20,5 +20,5 @@ Use this site to identify all the ways that I may be a good fit for your organiz
 
 ---
 
-- Email: [brobertswebdev@gmail.com](brobertswebdev@gmail.com)
+- Email: [relero90@gmail.com](relero90@gmail.com)
 - GitHub: [relero90](https://github.com/relero90)
