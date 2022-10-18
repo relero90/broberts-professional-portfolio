@@ -15,6 +15,7 @@
 }
 
 .navBar {
+  z-index: 1;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -42,7 +43,7 @@
 }
 
 /* When viewport width surpasses typical smartphone size */
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 650px) {
   header {
     display: flex;
     justify-content: space-between;
