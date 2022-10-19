@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Resume.css";
-import resume from "./Becca_Roberts_V2.pdf";
+import resume from "./Becca_Roberts.pdf";
 import resumeClip from "./resume.png";
 
 function Resume() {
