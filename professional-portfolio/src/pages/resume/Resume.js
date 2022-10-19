@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Resume.css";
-import resume from "./Resume.pdf";
-import resumeClip from "./Resume.jpeg";
+import resume from "./Becca_Roberts_V2.pdf";
+import resumeClip from "./resume.png";
 
 function Resume() {
   return (
