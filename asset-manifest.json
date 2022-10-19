@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/professional-portfolio-site/static/css/main.24716df1.css",
-    "main.js": "/professional-portfolio-site/static/js/main.b4495461.js",
+    "main.js": "/professional-portfolio-site/static/js/main.1266e09a.js",
     "static/js/787.10c1ab8b.chunk.js": "/professional-portfolio-site/static/js/787.10c1ab8b.chunk.js",
     "static/media/kiss-the-cook.png": "/professional-portfolio-site/static/media/kiss-the-cook.e69c8b0d07b612d2af15.png",
     "static/media/brewfinder.png": "/professional-portfolio-site/static/media/brewfinder.1b1b6ecb1769869c2960.png",
@@ -11,15 +11,14 @@
     "static/media/weatherApp.png": "/professional-portfolio-site/static/media/weatherApp.26170d5b5cd20e879e77.png",
     "static/media/resume.png": "/professional-portfolio-site/static/media/resume.550ed003c214e5c0a2a9.png",
     "static/media/mysqlEmployeeTracker.png": "/professional-portfolio-site/static/media/mysqlEmployeeTracker.514373587c132b368931.png",
-    "static/media/Becca_Roberts.pdf": "/professional-portfolio-site/static/media/Becca_Roberts.81e28172db3e44943950.pdf",
-    "static/media/Becca_Roberts_V2.pdf": "/professional-portfolio-site/static/media/Becca_Roberts_V2.76f79e8c9070e8f99eaf.pdf",
+    "static/media/Becca_Roberts_Resume.pdf": "/professional-portfolio-site/static/media/Becca_Roberts_Resume.aae788067c819b74b2e6.pdf",
     "index.html": "/professional-portfolio-site/index.html",
     "main.24716df1.css.map": "/professional-portfolio-site/static/css/main.24716df1.css.map",
-    "main.b4495461.js.map": "/professional-portfolio-site/static/js/main.b4495461.js.map",
+    "main.1266e09a.js.map": "/professional-portfolio-site/static/js/main.1266e09a.js.map",
     "787.10c1ab8b.chunk.js.map": "/professional-portfolio-site/static/js/787.10c1ab8b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24716df1.css",
-    "static/js/main.b4495461.js"
+    "static/js/main.1266e09a.js"
   ]
 }
