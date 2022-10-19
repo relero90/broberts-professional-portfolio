@@ -1,7 +1,7 @@
 // A single Footer component that appears on multiple pages
 import React, { useState } from "react";
 import "./styles/Footer.css";
-import resume from "../pages/resume/Becca_Roberts_V2.pdf";
+import resume from "../pages/resume/Becca_Roberts_Resume.pdf";
 import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 
