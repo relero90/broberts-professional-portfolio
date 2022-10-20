@@ -2,6 +2,16 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
+const nameFeedback = document.querySelector(".nameFeedback");
+const nameInput = document.querySelector(".nameInput");
+const emailFeedback = document.querySelector(".emailFeedback");
+const emailInput = document.querySelector(".emailInput");
+const phoneFeedback = document.querySelector(".phoneFeedback");
+const phoneInput = document.querySelector(".phoneInput");
+const messageFeedback = document.querySelector(".messageFeedback");
+const messageInput = document.querySelector(".messageInput");
+// const submitFeedbackField = document.querySelector(".sendFeedback");
+
 const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 const phoneRegex = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
 
@@ -37,27 +47,43 @@ function Contact() {
 
   function handleSubmit(event) {
     event.preventDefault();
-
-    const feedbackField = document.querySelector(".sendFeedback");
-    emailjs
-      .send(
-        "portfolio_email",
-        "portfolio_contact_form",
-        contactFormInputs,
-        "-nVgwSSo7LJY0IG8O"
-      )
-      .then(
-        (response) => {
-          console.log("Email sent.", response.status, response.text);
-          feedbackField.classList.add("messageSent");
-          feedbackField.textContent = "Your message was sent.";
-        },
-        (err) => {
-          console.log("Something went wrong...", err);
-          feedbackField.classList.add("messageProblem");
-          feedbackField.textContent = "Something went wrong...";
-        }
-      );
+    const submitFeedbackField = document.querySelector(".sendFeedback");
+    if (
+      nameFeedback.textContent === "" &&
+      nameInput.value &&
+      emailFeedback.textContent === "" &&
+      emailInput.value &&
+      phoneFeedback.textContent === "" &&
+      phoneInput.value &&
+      messageFeedback.textContent === "" &&
+      messageInput.value
+    ) {
+      emailjs
+        .send(
+          "portfolio_email",
+          "portfolio_contact_form",
+          contactFormInputs,
+          "-nVgwSSo7LJY0IG8O"
+        )
+        .then(
+          (response) => {
+            console.log("Email sent.", response.status, response.text);
+            submitFeedbackField.classList.remove("messageProblem");
+            submitFeedbackField.classList.add("messageSent");
+            submitFeedbackField.textContent = "Your message was sent.";
+          },
+          (err) => {
+            console.log("Something went wrong...", err);
+            submitFeedbackField.classList.remove("messageSent");
+            submitFeedbackField.classList.add("messageProblem");
+            submitFeedbackField.textContent = "Something went wrong...";
+          }
+        );
+    } else {
+      submitFeedbackField.classList.remove("messageSent");
+      submitFeedbackField.classList.add("messageProblem");
+      submitFeedbackField.textContent = "Please complete all required fields.";
+    }
   }
 
   // check name and message
@@ -110,7 +136,7 @@ function Contact() {
             placeholder="First Last"
             name="sender_name"
             onChange={updateTextState}
-            onMouseLeave={function() {
+            onMouseLeave={function () {
               checkIfEmpty(
                 document.querySelector(".nameInput"),
                 document.querySelector(".nameFeedback")
@@ -128,7 +154,7 @@ function Contact() {
             placeholder="name@example.com"
             name="sender_email"
             onChange={updateTextState}
-            onMouseLeave={function() {
+            onMouseLeave={function () {
               regexValidate(
                 document.querySelector(".emailInput"),
                 document.querySelector(".emailFeedback"),
@@ -147,7 +173,7 @@ function Contact() {
             placeholder="000-000-0000"
             name="sender_phone"
             onChange={updateTextState}
-            onMouseLeave={function() {
+            onMouseLeave={function () {
               regexValidate(
                 document.querySelector(".phoneInput"),
                 document.querySelector(".phoneFeedback"),
@@ -165,7 +191,7 @@ function Contact() {
             rows="3"
             name="message"
             onChange={updateTextState}
-            onMouseLeave={function() {
+            onMouseLeave={function () {
               checkIfEmpty(
                 document.querySelector(".messageInput"),
                 document.querySelector(".messageFeedback")
