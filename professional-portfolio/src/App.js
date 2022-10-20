@@ -32,18 +32,21 @@ function App() {
         <Header />
         <section style={styles.body}>
           <Routes>
-            <Route path="/professional-portfolio-site" element={<About />} />
+            <Route
+              path="/broberts-professional-portfolio"
+              element={<About />}
+            />
             <Route path="/" element={<About />} />
             <Route
-              path="/professional-portfolio-site/work"
+              path="/broberts-professional-portfolio/work"
               element={<Project />}
             />
             <Route
-              path="/professional-portfolio-site/resume"
+              path="/broberts-professional-portfolio/resume"
               element={<Resume />}
             />
             <Route
-              path="/professional-portfolio-site/contact"
+              path="/broberts-professional-portfolio/contact"
               element={<Contact />}
             />
           </Routes>
