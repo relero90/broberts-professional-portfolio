@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/professional-portfolio-site/static/css/main.24716df1.css",
-    "main.js": "/professional-portfolio-site/static/js/main.0f72231f.js",
+    "main.js": "/professional-portfolio-site/static/js/main.74757628.js",
     "static/js/787.10c1ab8b.chunk.js": "/professional-portfolio-site/static/js/787.10c1ab8b.chunk.js",
     "static/media/kiss-the-cook.png": "/professional-portfolio-site/static/media/kiss-the-cook.e69c8b0d07b612d2af15.png",
     "static/media/brewfinder.png": "/professional-portfolio-site/static/media/brewfinder.1b1b6ecb1769869c2960.png",
@@ -14,11 +14,11 @@
     "static/media/Becca_Roberts_Resume.pdf": "/professional-portfolio-site/static/media/Becca_Roberts_Resume.008f580febc35b29f82e.pdf",
     "index.html": "/professional-portfolio-site/index.html",
     "main.24716df1.css.map": "/professional-portfolio-site/static/css/main.24716df1.css.map",
-    "main.0f72231f.js.map": "/professional-portfolio-site/static/js/main.0f72231f.js.map",
+    "main.74757628.js.map": "/professional-portfolio-site/static/js/main.74757628.js.map",
     "787.10c1ab8b.chunk.js.map": "/professional-portfolio-site/static/js/787.10c1ab8b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24716df1.css",
-    "static/js/main.0f72231f.js"
+    "static/js/main.74757628.js"
   ]
 }
