@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import TypeIt from "typeit-react";
 import "./About.css";
 import {
   SiHtml5,
@@ -20,17 +21,20 @@ function About() {
           alt="An avatar for Becca - purple hair and a round face"
           className="avatar"
         />
-        <h3 className="welcomeHeader">Welcome to my professional portfolio.</h3>
+        <h3 className="welcomeHeader">
+          <TypeIt>Welcome to my professional portfolio.</TypeIt>
+        </h3>
         <p className="brandStatement">
-          My name is Becca Roberts and I am a full-stack web developer. I am a
-          collaborative thinker with an eye for small details and a passion for
-          organization and open communication. My background as an elementary
-          classroom teacher has taught me to be resilient, adaptable,
-          optimistic, and curious.
+          I am a software developer with a passion for collaboration, creative
+          problem-solving, and continued personal and professional growth. Nine
+          years of elementary classroom teaching have taught me to be adaptable,
+          organized, self-sufficient, and kind. Three months of 60-hour weeks in
+          the University of Denver's Full-Stack Coding Bootcamp have prepared me
+          to thrive in a fast-paced, outcomes-driven, agile environment.
         </p>
         <p className="brandStatement">
-          When I'm not coding, I enjoy cooking, gardening, outdoor adventures,
-          and furry friends.
+          When I'm not coding, I enjoy cooking, gardening, reading, outdoor
+          adventures, and furry friends.
         </p>
       </div>
       <div className="skillsContainer">
