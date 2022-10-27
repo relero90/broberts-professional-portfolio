@@ -4,6 +4,7 @@ import { loadFull } from "tsparticles";
 import particlesOptions from "./particles.json";
 
 import Header from "./components/Header";
+// import Main from "./components/Main";
 import About from "./pages/about/About.js";
 import Project from "./pages/projects/Project";
 import Contact from "./pages/contact/ContactForm";
@@ -27,7 +28,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <>
       <main className="aboveParticles">
         <Header />
         <section style={styles.body}>
@@ -37,24 +38,15 @@ function App() {
               element={<About />}
             />
             <Route path="/" element={<About />} />
-            <Route
-              path="/broberts-professional-portfolio/work"
-              element={<Project />}
-            />
-            <Route
-              path="/broberts-professional-portfolio/resume"
-              element={<Resume />}
-            />
-            <Route
-              path="/broberts-professional-portfolio/contact"
-              element={<Contact />}
-            />
+            <Route path="/work" element={<Project />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </section>
         <Footer />
       </main>
       <Particles options={particlesOptions} init={particlesInit} />
-    </Router>
+    </>
   );
 }
 

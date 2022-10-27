@@ -1,14 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { HashRouter } from "react-router-dom";
+// import {
+//   createHashRouter,
+//   RouterProvider,
+// } from "react-router-dom";
+
+// const router = createHashRouter([
+//   {
+//     path: "/",
+//     element: <Root />,
+//     loader:
+//   }
+// ])
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
 

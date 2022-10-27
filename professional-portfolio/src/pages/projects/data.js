@@ -9,8 +9,8 @@ const projects = [
   {
     index: 0,
     imagePath: bubbleDungeonz,
-    alt: "Bubble Dungeonz is a game hosting platform that includes user authentication and a chat feature.",
-    title: "Bubble Dungeonz",
+    alt: "Bubble Arcade is a game hosting platform that includes user authentication and a chat feature.",
+    title: "Bubble Arcade",
     description:
       "A full stack MERN application for hosting simple online games and live chat.",
     appLink: "https://bubbledungeonz.herokuapp.com/",

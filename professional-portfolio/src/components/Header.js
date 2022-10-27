@@ -10,26 +10,26 @@ function NavBar() {
       <h1 className="nameText">Becca Roberts</h1>
       <div className="navBar">
         {/* About Button */}
-        <Link to={{ pathname: "/broberts-professional-portfolio" }}>
+        <Link to="/">
           <button className="navBtn" id="about">
             About
           </button>
         </Link>
         {/* Work Button */}
-        <Link to={{ pathname: "/broberts-professional-portfolio/work" }}>
+        <Link to="/work">
           <button className="navBtn" id="work">
             Work
           </button>
         </Link>
         {/* Resume Download Button */}
-        <Link to={{ pathname: "/broberts-professional-portfolio/resume" }}>
+        <Link to="/resume">
           <button className="navBtn" id="resume">
             Resume
           </button>
         </Link>
 
         {/* Contact Button */}
-        <Link to={{ pathname: "/broberts-professional-portfolio/contact" }}>
+        <Link to="/contact">
           <button className="navBtn" id="contact">
             Contact
           </button>
