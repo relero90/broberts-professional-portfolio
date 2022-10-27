@@ -14,7 +14,7 @@ const projects = [
     description:
       "A full stack MERN application for hosting simple online games and live chat.",
     appLink: "https://bubbledungeonz.herokuapp.com/",
-    gitHub: "https://github.com/l1keafox/bubbleDungeonz",
+    gitHub: "https://github.com/relero90/bubbleDungeonz",
   },
   {
     index: 1,
@@ -23,8 +23,8 @@ const projects = [
     title: "Kiss the Cook",
     description:
       "A full stack recipe application for the blog-averse home cook. Featuring a MySQL database, ExpressJS server, NodeJS front end with the Handlebars template engine.",
-    appLink: "https://kiss-the-cook.herokuapp.com/",
-    gitHub: "https://github.com/madrodgerflynn/Kiss_The_Cook",
+    appLink: "https://kissthecook.herokuapp.com/",
+    gitHub: "https://github.com/relero90/kiss-the-cook",
   },
   {
     index: 2,
