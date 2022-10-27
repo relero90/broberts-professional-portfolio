@@ -10,9 +10,8 @@ const phoneFeedback = document.querySelector(".phoneFeedback");
 const phoneInput = document.querySelector(".phoneInput");
 const messageFeedback = document.querySelector(".messageFeedback");
 const messageInput = document.querySelector(".messageInput");
-// const submitFeedbackField = document.querySelector(".sendFeedback");
 
-const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+const emailRegex = /^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/;
 const phoneRegex = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
 
 function Contact() {
@@ -39,7 +38,7 @@ function Contact() {
       case "sender_phone":
         setSenderPhone(event.target.value);
         break;
-      case "message":
+      default:
         setMessage(event.target.value);
         break;
     }
@@ -129,7 +128,7 @@ function Contact() {
       <h6>(520) 360-3373</h6>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label for="exampleFormControlInput1">Your Name</label>
+          <label htmlFor="exampleFormControlInput1">Your Name</label>
           <input
             type="text"
             className="form-control nameInput"
@@ -147,7 +146,7 @@ function Contact() {
           <p className="feedbackText nameFeedback"></p>
         </div>
         <div className="form-group">
-          <label for="exampleFormControlInput1">Your Email</label>
+          <label htmlFor="exampleFormControlInput1">Your Email</label>
           <input
             type="email"
             className="form-control emailInput"
@@ -166,7 +165,7 @@ function Contact() {
           <p className="feedbackText emailFeedback"></p>
         </div>
         <div className="form-group">
-          <label for="exampleFormControlInput1">Your Phone Number</label>
+          <label htmlFor="exampleFormControlInput1">Your Phone Number</label>
           <input
             type="phone"
             className="form-control phoneInput"
@@ -185,7 +184,7 @@ function Contact() {
           <p className="feedbackText phoneFeedback"></p>
         </div>
         <div className="form-group">
-          <label for="exampleFormControlTextarea1">Your Message</label>
+          <label htmlFor="exampleFormControlTextarea1">Your Message</label>
           <textarea
             className="form-control messageInput"
             rows="3"

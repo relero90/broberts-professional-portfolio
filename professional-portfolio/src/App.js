@@ -4,14 +4,13 @@ import { loadFull } from "tsparticles";
 import particlesOptions from "./particles.json";
 
 import Header from "./components/Header";
-// import Main from "./components/Main";
 import About from "./pages/about/About.js";
 import Project from "./pages/projects/Project";
 import Contact from "./pages/contact/ContactForm";
 import Resume from "./pages/resume/Resume";
 import Footer from "./components/Footer";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const particlesInit = useCallback((main) => {
