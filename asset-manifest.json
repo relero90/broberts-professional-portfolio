@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/broberts-professional-portfolio/static/css/main.24716df1.css",
-    "main.js": "/broberts-professional-portfolio/static/js/main.96276f20.js",
+    "main.css": "/broberts-professional-portfolio/static/css/main.37e3db24.css",
+    "main.js": "/broberts-professional-portfolio/static/js/main.f0cdf85a.js",
     "static/js/787.10c1ab8b.chunk.js": "/broberts-professional-portfolio/static/js/787.10c1ab8b.chunk.js",
     "static/media/kiss-the-cook.png": "/broberts-professional-portfolio/static/media/kiss-the-cook.e69c8b0d07b612d2af15.png",
     "static/media/brewfinder.png": "/broberts-professional-portfolio/static/media/brewfinder.1b1b6ecb1769869c2960.png",
@@ -13,12 +13,12 @@
     "static/media/mysqlEmployeeTracker.png": "/broberts-professional-portfolio/static/media/mysqlEmployeeTracker.514373587c132b368931.png",
     "static/media/Becca_Roberts_Resume.pdf": "/broberts-professional-portfolio/static/media/Becca_Roberts_Resume.6565bb7b49b83531abfd.pdf",
     "index.html": "/broberts-professional-portfolio/index.html",
-    "main.24716df1.css.map": "/broberts-professional-portfolio/static/css/main.24716df1.css.map",
-    "main.96276f20.js.map": "/broberts-professional-portfolio/static/js/main.96276f20.js.map",
+    "main.37e3db24.css.map": "/broberts-professional-portfolio/static/css/main.37e3db24.css.map",
+    "main.f0cdf85a.js.map": "/broberts-professional-portfolio/static/js/main.f0cdf85a.js.map",
     "787.10c1ab8b.chunk.js.map": "/broberts-professional-portfolio/static/js/787.10c1ab8b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.24716df1.css",
-    "static/js/main.96276f20.js"
+    "static/css/main.37e3db24.css",
+    "static/js/main.f0cdf85a.js"
   ]
 }
